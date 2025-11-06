@@ -1,0 +1,290 @@
+2025-11-06 15:54:03 - crack_dim_12 - INFO - ======================================================================
+2025-11-06 15:54:03 - crack_dim_12 - INFO - COMPREHENSIVE SEARCH FOR DIMENSION 12
+2025-11-06 15:54:03 - crack_dim_12 - INFO - ======================================================================
+2025-11-06 15:54:03 - crack_dim_12 - INFO - Memory limit: 50.0 GB
+2025-11-06 15:54:03 - crack_dim_12 - INFO - Max levels: 200000
+2025-11-06 15:54:03 - crack_dim_12 - INFO - Known record: 1439
+2025-11-06 15:54:03 - crack_dim_12 - INFO - 
+2025-11-06 15:54:03 - crack_dim_12 - INFO - 
+======================================================================
+2025-11-06 15:54:03 - crack_dim_12 - INFO - STARTING STRATEGY 1
+2025-11-06 15:54:03 - crack_dim_12 - INFO - ======================================================================
+2025-11-06 15:54:03 - crack_dim_12 - INFO - ======================================================================
+2025-11-06 15:54:03 - crack_dim_12 - INFO - STRATEGY 1: Priming from lower dimensions (target: 12)
+2025-11-06 15:54:03 - crack_dim_12 - INFO - ======================================================================
+2025-11-06 15:54:03 - crack_dim_12 - INFO - 
+Attempting to extend from dimension 11 to 12
+2025-11-06 15:54:03 - crack_dim_12 - INFO -   Seed snake length: 732
+  Known record for 11: 732
+2025-11-06 15:54:03 - crack_dim_12 - INFO - Found snake length 733 (record: 1439, method: priming_from_11)
+2025-11-06 15:54:03 - crack_dim_12 - INFO -   ✓ Extended from 11D: 732 → 733 (+1)
+  Time: 0.06s
+2025-11-06 15:54:03 - crack_dim_12 - INFO - 
+Attempting to extend from dimension 10 to 12
+2025-11-06 15:54:03 - crack_dim_12 - INFO -   Seed snake length: 373
+  Known record for 10: 373
+2025-11-06 15:54:03 - crack_dim_12 - INFO - Found snake length 375 (record: 1439, method: priming_from_10)
+2025-11-06 15:54:03 - crack_dim_12 - INFO -   ✓ Extended from 10D: 373 → 375 (+2)
+  Time: 0.08s
+2025-11-06 15:54:03 - crack_dim_12 - INFO - 
+Attempting to extend from dimension 9 to 12
+2025-11-06 15:54:03 - crack_dim_12 - INFO -   Seed snake length: 190
+  Known record for 9: 188
+2025-11-06 15:54:03 - crack_dim_12 - INFO - Found snake length 193 (record: 1439, method: priming_from_9)
+2025-11-06 15:54:03 - crack_dim_12 - INFO -   ✓ Extended from 9D: 190 → 193 (+3)
+  Time: 0.11s
+2025-11-06 15:54:03 - crack_dim_12 - INFO - 
+Strategy 1 best result: length 733 (from dimension 11)
+2025-11-06 15:54:03 - crack_dim_12 - INFO - New best: 733 (Strategy 1)
+2025-11-06 15:54:03 - crack_dim_12 - INFO - 
+======================================================================
+2025-11-06 15:54:03 - crack_dim_12 - INFO - STARTING STRATEGY 2
+2025-11-06 15:54:03 - crack_dim_12 - INFO - ======================================================================
+2025-11-06 15:54:03 - crack_dim_12 - INFO - ======================================================================
+2025-11-06 15:54:03 - crack_dim_12 - INFO - STRATEGY 2: Direct pruned BFS search (dimension 12)
+2025-11-06 15:54:03 - crack_dim_12 - INFO - ======================================================================
+2025-11-06 15:54:03 - crack_dim_12 - INFO - Starting search from empty snake...
+2025-11-06 15:54:03 - crack_dim_12 - INFO -   ✓ Direct search found snake of length 12
+  Time: 0.01s
+2025-11-06 15:54:03 - crack_dim_12 - INFO - 
+======================================================================
+2025-11-06 15:54:03 - crack_dim_12 - INFO - STARTING STRATEGY 3
+2025-11-06 15:54:03 - crack_dim_12 - INFO - ======================================================================
+2025-11-06 15:54:03 - crack_dim_12 - INFO - ======================================================================
+2025-11-06 15:54:03 - crack_dim_12 - INFO - STRATEGY 3: Multiple seed starting points (dimension 12)
+2025-11-06 15:54:03 - crack_dim_12 - INFO - ======================================================================
+2025-11-06 15:54:03 - crack_dim_12 - INFO - 
+Trying seeds from dimension 11
+2025-11-06 15:54:03 - crack_dim_12 - INFO -   Full seed length: 732
+2025-11-06 15:54:03 - crack_dim_12 - INFO -   Trying prefix of length 724 (99% of seed)
+2025-11-06 15:54:03 - crack_dim_12 - INFO - Found snake length 725 (record: 1439, method: seed_11_prefix_724)
+2025-11-06 15:54:03 - crack_dim_12 - INFO -     ✓ Extended from prefix 724: 724 → 725 (+1)
+    Time: 0.07s
+2025-11-06 15:54:03 - crack_dim_12 - INFO -   Trying prefix of length 695 (95% of seed)
+2025-11-06 15:54:03 - crack_dim_12 - INFO - Found snake length 696 (record: 1439, method: seed_11_prefix_695)
+2025-11-06 15:54:03 - crack_dim_12 - INFO -     ✓ Extended from prefix 695: 695 → 696 (+1)
+    Time: 0.05s
+2025-11-06 15:54:03 - crack_dim_12 - INFO -   Trying prefix of length 658 (90% of seed)
+2025-11-06 15:54:04 - crack_dim_12 - INFO - Found snake length 659 (record: 1439, method: seed_11_prefix_658)
+2025-11-06 15:54:04 - crack_dim_12 - INFO -     ✓ Extended from prefix 658: 658 → 659 (+1)
+    Time: 0.06s
+2025-11-06 15:54:04 - crack_dim_12 - INFO -   Trying prefix of length 622 (85% of seed)
+2025-11-06 15:54:04 - crack_dim_12 - INFO - Found snake length 623 (record: 1439, method: seed_11_prefix_622)
+2025-11-06 15:54:04 - crack_dim_12 - INFO -     ✓ Extended from prefix 622: 622 → 623 (+1)
+    Time: 0.11s
+2025-11-06 15:54:04 - crack_dim_12 - INFO -   Trying prefix of length 585 (80% of seed)
+2025-11-06 15:54:04 - crack_dim_12 - INFO - Found snake length 586 (record: 1439, method: seed_11_prefix_585)
+2025-11-06 15:54:04 - crack_dim_12 - INFO -     ✓ Extended from prefix 585: 585 → 586 (+1)
+    Time: 0.05s
+2025-11-06 15:54:04 - crack_dim_12 - INFO -   Trying prefix of length 549 (75% of seed)
+2025-11-06 15:54:04 - crack_dim_12 - INFO - Found snake length 550 (record: 1439, method: seed_11_prefix_549)
+2025-11-06 15:54:04 - crack_dim_12 - INFO -     ✓ Extended from prefix 549: 549 → 550 (+1)
+    Time: 0.04s
+2025-11-06 15:54:04 - crack_dim_12 - INFO -   Trying prefix of length 512 (70% of seed)
+2025-11-06 15:54:04 - crack_dim_12 - INFO - Found snake length 513 (record: 1439, method: seed_11_prefix_512)
+2025-11-06 15:54:04 - crack_dim_12 - INFO -     ✓ Extended from prefix 512: 512 → 513 (+1)
+    Time: 0.04s
+2025-11-06 15:54:04 - crack_dim_12 - INFO -   Trying prefix of length 439 (60% of seed)
+2025-11-06 15:54:04 - crack_dim_12 - INFO - Found snake length 440 (record: 1439, method: seed_11_prefix_439)
+2025-11-06 15:54:04 - crack_dim_12 - INFO -     ✓ Extended from prefix 439: 439 → 440 (+1)
+    Time: 0.05s
+2025-11-06 15:54:04 - crack_dim_12 - INFO -   Trying prefix of length 366 (50% of seed)
+2025-11-06 15:54:04 - crack_dim_12 - INFO - Found snake length 368 (record: 1439, method: seed_11_prefix_366)
+2025-11-06 15:54:04 - crack_dim_12 - INFO -     ✓ Extended from prefix 366: 366 → 368 (+2)
+    Time: 0.06s
+2025-11-06 15:54:04 - crack_dim_12 - INFO -   Trying prefix of length 292 (40% of seed)
+2025-11-06 15:54:04 - crack_dim_12 - INFO - Found snake length 294 (record: 1439, method: seed_11_prefix_292)
+2025-11-06 15:54:04 - crack_dim_12 - INFO -     ✓ Extended from prefix 292: 292 → 294 (+2)
+    Time: 0.06s
+2025-11-06 15:54:04 - crack_dim_12 - INFO -   Trying prefix of length 219 (30% of seed)
+2025-11-06 15:54:04 - crack_dim_12 - INFO - Found snake length 221 (record: 1439, method: seed_11_prefix_219)
+2025-11-06 15:54:04 - crack_dim_12 - INFO -     ✓ Extended from prefix 219: 219 → 221 (+2)
+    Time: 0.05s
+2025-11-06 15:54:04 - crack_dim_12 - INFO -   Trying prefix of length 146 (20% of seed)
+2025-11-06 15:54:04 - crack_dim_12 - INFO - Found snake length 149 (record: 1439, method: seed_11_prefix_146)
+2025-11-06 15:54:04 - crack_dim_12 - INFO -     ✓ Extended from prefix 146: 146 → 149 (+3)
+    Time: 0.06s
+2025-11-06 15:54:04 - crack_dim_12 - INFO -   Trying prefix of length 73 (10% of seed)
+2025-11-06 15:54:04 - crack_dim_12 - INFO - Found snake length 77 (record: 1439, method: seed_11_prefix_73)
+2025-11-06 15:54:04 - crack_dim_12 - INFO -     ✓ Extended from prefix 73: 73 → 77 (+4)
+    Time: 0.01s
+2025-11-06 15:54:04 - crack_dim_12 - INFO -   Trying fixed prefix of length 500
+2025-11-06 15:54:04 - crack_dim_12 - INFO - Found snake length 501 (record: 1439, method: seed_11_fixed_500)
+2025-11-06 15:54:04 - crack_dim_12 - INFO -     ✓ Extended from fixed prefix 500: 500 → 501 (+1)
+    Time: 0.04s
+2025-11-06 15:54:04 - crack_dim_12 - INFO -   Trying fixed prefix of length 200
+2025-11-06 15:54:05 - crack_dim_12 - INFO - Found snake length 202 (record: 1439, method: seed_11_fixed_200)
+2025-11-06 15:54:05 - crack_dim_12 - INFO -     ✓ Extended from fixed prefix 200: 200 → 202 (+2)
+    Time: 0.06s
+2025-11-06 15:54:05 - crack_dim_12 - INFO -   Trying fixed prefix of length 100
+2025-11-06 15:54:05 - crack_dim_12 - INFO - Found snake length 103 (record: 1439, method: seed_11_fixed_100)
+2025-11-06 15:54:05 - crack_dim_12 - INFO -     ✓ Extended from fixed prefix 100: 100 → 103 (+3)
+    Time: 0.01s
+2025-11-06 15:54:05 - crack_dim_12 - INFO -   Trying fixed prefix of length 50
+2025-11-06 15:54:05 - crack_dim_12 - INFO - Found snake length 54 (record: 1439, method: seed_11_fixed_50)
+2025-11-06 15:54:05 - crack_dim_12 - INFO -     ✓ Extended from fixed prefix 50: 50 → 54 (+4)
+    Time: 0.02s
+2025-11-06 15:54:05 - crack_dim_12 - INFO -   Trying fixed prefix of length 20
+2025-11-06 15:54:05 - crack_dim_12 - INFO - Found snake length 26 (record: 1439, method: seed_11_fixed_20)
+2025-11-06 15:54:05 - crack_dim_12 - INFO -     ✓ Extended from fixed prefix 20: 20 → 26 (+6)
+    Time: 0.01s
+2025-11-06 15:54:05 - crack_dim_12 - INFO -   Trying fixed prefix of length 10
+2025-11-06 15:54:05 - crack_dim_12 - INFO - Found snake length 17 (record: 1439, method: seed_11_fixed_10)
+2025-11-06 15:54:05 - crack_dim_12 - INFO -     ✓ Extended from fixed prefix 10: 10 → 17 (+7)
+    Time: 0.01s
+2025-11-06 15:54:05 - crack_dim_12 - INFO - 
+Trying seeds from dimension 10
+2025-11-06 15:54:05 - crack_dim_12 - INFO -   Full seed length: 373
+2025-11-06 15:54:05 - crack_dim_12 - INFO -   Trying prefix of length 369 (99% of seed)
+2025-11-06 15:54:05 - crack_dim_12 - INFO - Found snake length 371 (record: 1439, method: seed_10_prefix_369)
+2025-11-06 15:54:05 - crack_dim_12 - INFO -     ✓ Extended from prefix 369: 369 → 371 (+2)
+    Time: 0.06s
+2025-11-06 15:54:05 - crack_dim_12 - INFO -   Trying prefix of length 354 (95% of seed)
+2025-11-06 15:54:05 - crack_dim_12 - INFO - Found snake length 356 (record: 1439, method: seed_10_prefix_354)
+2025-11-06 15:54:05 - crack_dim_12 - INFO -     ✓ Extended from prefix 354: 354 → 356 (+2)
+    Time: 0.06s
+2025-11-06 15:54:05 - crack_dim_12 - INFO -   Trying prefix of length 335 (90% of seed)
+2025-11-06 15:54:05 - crack_dim_12 - INFO - Found snake length 337 (record: 1439, method: seed_10_prefix_335)
+2025-11-06 15:54:05 - crack_dim_12 - INFO -     ✓ Extended from prefix 335: 335 → 337 (+2)
+    Time: 0.06s
+2025-11-06 15:54:05 - crack_dim_12 - INFO -   Trying prefix of length 317 (85% of seed)
+2025-11-06 15:54:05 - crack_dim_12 - INFO - Found snake length 319 (record: 1439, method: seed_10_prefix_317)
+2025-11-06 15:54:05 - crack_dim_12 - INFO -     ✓ Extended from prefix 317: 317 → 319 (+2)
+    Time: 0.05s
+2025-11-06 15:54:05 - crack_dim_12 - INFO -   Trying prefix of length 298 (80% of seed)
+2025-11-06 15:54:05 - crack_dim_12 - INFO - Found snake length 300 (record: 1439, method: seed_10_prefix_298)
+2025-11-06 15:54:05 - crack_dim_12 - INFO -     ✓ Extended from prefix 298: 298 → 300 (+2)
+    Time: 0.05s
+2025-11-06 15:54:05 - crack_dim_12 - INFO -   Trying prefix of length 279 (75% of seed)
+2025-11-06 15:54:05 - crack_dim_12 - INFO - Found snake length 281 (record: 1439, method: seed_10_prefix_279)
+2025-11-06 15:54:05 - crack_dim_12 - INFO -     ✓ Extended from prefix 279: 279 → 281 (+2)
+    Time: 0.05s
+2025-11-06 15:54:05 - crack_dim_12 - INFO -   Trying prefix of length 261 (70% of seed)
+2025-11-06 15:54:05 - crack_dim_12 - INFO - Found snake length 263 (record: 1439, method: seed_10_prefix_261)
+2025-11-06 15:54:05 - crack_dim_12 - INFO -     ✓ Extended from prefix 261: 261 → 263 (+2)
+    Time: 0.05s
+2025-11-06 15:54:05 - crack_dim_12 - INFO -   Trying prefix of length 223 (60% of seed)
+2025-11-06 15:54:05 - crack_dim_12 - INFO - Found snake length 225 (record: 1439, method: seed_10_prefix_223)
+2025-11-06 15:54:05 - crack_dim_12 - INFO -     ✓ Extended from prefix 223: 223 → 225 (+2)
+    Time: 0.06s
+2025-11-06 15:54:05 - crack_dim_12 - INFO -   Trying prefix of length 186 (50% of seed)
+2025-11-06 15:54:05 - crack_dim_12 - INFO - Found snake length 189 (record: 1439, method: seed_10_prefix_186)
+2025-11-06 15:54:05 - crack_dim_12 - INFO -     ✓ Extended from prefix 186: 186 → 189 (+3)
+    Time: 0.06s
+2025-11-06 15:54:05 - crack_dim_12 - INFO -   Trying prefix of length 149 (40% of seed)
+2025-11-06 15:54:05 - crack_dim_12 - INFO - Found snake length 152 (record: 1439, method: seed_10_prefix_149)
+2025-11-06 15:54:05 - crack_dim_12 - INFO -     ✓ Extended from prefix 149: 149 → 152 (+3)
+    Time: 0.06s
+2025-11-06 15:54:05 - crack_dim_12 - INFO -   Trying prefix of length 111 (30% of seed)
+2025-11-06 15:54:05 - crack_dim_12 - INFO - Found snake length 114 (record: 1439, method: seed_10_prefix_111)
+2025-11-06 15:54:05 - crack_dim_12 - INFO -     ✓ Extended from prefix 111: 111 → 114 (+3)
+    Time: 0.06s
+2025-11-06 15:54:05 - crack_dim_12 - INFO -   Trying prefix of length 74 (20% of seed)
+2025-11-06 15:54:05 - crack_dim_12 - INFO - Found snake length 78 (record: 1439, method: seed_10_prefix_74)
+2025-11-06 15:54:05 - crack_dim_12 - INFO -     ✓ Extended from prefix 74: 74 → 78 (+4)
+    Time: 0.01s
+2025-11-06 15:54:05 - crack_dim_12 - INFO -   Trying prefix of length 37 (10% of seed)
+2025-11-06 15:54:05 - crack_dim_12 - INFO - Found snake length 42 (record: 1439, method: seed_10_prefix_37)
+2025-11-06 15:54:05 - crack_dim_12 - INFO -     ✓ Extended from prefix 37: 37 → 42 (+5)
+    Time: 0.01s
+2025-11-06 15:54:05 - crack_dim_12 - INFO -   Trying fixed prefix of length 200
+2025-11-06 15:54:05 - crack_dim_12 - INFO - Found snake length 202 (record: 1439, method: seed_10_fixed_200)
+2025-11-06 15:54:05 - crack_dim_12 - INFO -     ✓ Extended from fixed prefix 200: 200 → 202 (+2)
+    Time: 0.06s
+2025-11-06 15:54:05 - crack_dim_12 - INFO -   Trying fixed prefix of length 100
+2025-11-06 15:54:05 - crack_dim_12 - INFO - Found snake length 103 (record: 1439, method: seed_10_fixed_100)
+2025-11-06 15:54:05 - crack_dim_12 - INFO -     ✓ Extended from fixed prefix 100: 100 → 103 (+3)
+    Time: 0.01s
+2025-11-06 15:54:05 - crack_dim_12 - INFO -   Trying fixed prefix of length 50
+2025-11-06 15:54:05 - crack_dim_12 - INFO - Found snake length 54 (record: 1439, method: seed_10_fixed_50)
+2025-11-06 15:54:05 - crack_dim_12 - INFO -     ✓ Extended from fixed prefix 50: 50 → 54 (+4)
+    Time: 0.01s
+2025-11-06 15:54:05 - crack_dim_12 - INFO -   Trying fixed prefix of length 20
+2025-11-06 15:54:05 - crack_dim_12 - INFO - Found snake length 26 (record: 1439, method: seed_10_fixed_20)
+2025-11-06 15:54:05 - crack_dim_12 - INFO -     ✓ Extended from fixed prefix 20: 20 → 26 (+6)
+    Time: 0.01s
+2025-11-06 15:54:05 - crack_dim_12 - INFO -   Trying fixed prefix of length 10
+2025-11-06 15:54:05 - crack_dim_12 - INFO - Found snake length 17 (record: 1439, method: seed_10_fixed_10)
+2025-11-06 15:54:05 - crack_dim_12 - INFO -     ✓ Extended from fixed prefix 10: 10 → 17 (+7)
+    Time: 0.01s
+2025-11-06 15:54:05 - crack_dim_12 - INFO - 
+Trying seeds from dimension 9
+2025-11-06 15:54:05 - crack_dim_12 - INFO -   Full seed length: 190
+2025-11-06 15:54:05 - crack_dim_12 - INFO -   Trying prefix of length 188 (99% of seed)
+2025-11-06 15:54:06 - crack_dim_12 - INFO - Found snake length 191 (record: 1439, method: seed_9_prefix_188)
+2025-11-06 15:54:06 - crack_dim_12 - INFO -     ✓ Extended from prefix 188: 188 → 191 (+3)
+    Time: 0.06s
+2025-11-06 15:54:06 - crack_dim_12 - INFO -   Trying prefix of length 180 (95% of seed)
+2025-11-06 15:54:06 - crack_dim_12 - INFO - Found snake length 183 (record: 1439, method: seed_9_prefix_180)
+2025-11-06 15:54:06 - crack_dim_12 - INFO -     ✓ Extended from prefix 180: 180 → 183 (+3)
+    Time: 0.06s
+2025-11-06 15:54:06 - crack_dim_12 - INFO -   Trying prefix of length 171 (90% of seed)
+2025-11-06 15:54:06 - crack_dim_12 - INFO - Found snake length 174 (record: 1439, method: seed_9_prefix_171)
+2025-11-06 15:54:06 - crack_dim_12 - INFO -     ✓ Extended from prefix 171: 171 → 174 (+3)
+    Time: 0.06s
+2025-11-06 15:54:06 - crack_dim_12 - INFO -   Trying prefix of length 161 (85% of seed)
+2025-11-06 15:54:06 - crack_dim_12 - INFO - Found snake length 164 (record: 1439, method: seed_9_prefix_161)
+2025-11-06 15:54:06 - crack_dim_12 - INFO -     ✓ Extended from prefix 161: 161 → 164 (+3)
+    Time: 0.06s
+2025-11-06 15:54:06 - crack_dim_12 - INFO -   Trying prefix of length 152 (80% of seed)
+2025-11-06 15:54:06 - crack_dim_12 - INFO - Found snake length 155 (record: 1439, method: seed_9_prefix_152)
+2025-11-06 15:54:06 - crack_dim_12 - INFO -     ✓ Extended from prefix 152: 152 → 155 (+3)
+    Time: 0.07s
+2025-11-06 15:54:06 - crack_dim_12 - INFO -   Trying prefix of length 142 (75% of seed)
+2025-11-06 15:54:06 - crack_dim_12 - INFO - Found snake length 145 (record: 1439, method: seed_9_prefix_142)
+2025-11-06 15:54:06 - crack_dim_12 - INFO -     ✓ Extended from prefix 142: 142 → 145 (+3)
+    Time: 0.06s
+2025-11-06 15:54:06 - crack_dim_12 - INFO -   Trying prefix of length 133 (70% of seed)
+2025-11-06 15:54:06 - crack_dim_12 - INFO - Found snake length 136 (record: 1439, method: seed_9_prefix_133)
+2025-11-06 15:54:06 - crack_dim_12 - INFO -     ✓ Extended from prefix 133: 133 → 136 (+3)
+    Time: 0.12s
+2025-11-06 15:54:06 - crack_dim_12 - INFO -   Trying prefix of length 114 (60% of seed)
+2025-11-06 15:54:06 - crack_dim_12 - INFO - Found snake length 117 (record: 1439, method: seed_9_prefix_114)
+2025-11-06 15:54:06 - crack_dim_12 - INFO -     ✓ Extended from prefix 114: 114 → 117 (+3)
+    Time: 0.10s
+2025-11-06 15:54:06 - crack_dim_12 - INFO -   Trying prefix of length 95 (50% of seed)
+2025-11-06 15:54:06 - crack_dim_12 - INFO - Found snake length 98 (record: 1439, method: seed_9_prefix_95)
+2025-11-06 15:54:06 - crack_dim_12 - INFO -     ✓ Extended from prefix 95: 95 → 98 (+3)
+    Time: 0.01s
+2025-11-06 15:54:06 - crack_dim_12 - INFO -   Trying prefix of length 76 (40% of seed)
+2025-11-06 15:54:06 - crack_dim_12 - INFO - Found snake length 80 (record: 1439, method: seed_9_prefix_76)
+2025-11-06 15:54:06 - crack_dim_12 - INFO -     ✓ Extended from prefix 76: 76 → 80 (+4)
+    Time: 0.01s
+2025-11-06 15:54:06 - crack_dim_12 - INFO -   Trying prefix of length 57 (30% of seed)
+2025-11-06 15:54:06 - crack_dim_12 - INFO - Found snake length 61 (record: 1439, method: seed_9_prefix_57)
+2025-11-06 15:54:06 - crack_dim_12 - INFO -     ✓ Extended from prefix 57: 57 → 61 (+4)
+    Time: 0.01s
+2025-11-06 15:54:06 - crack_dim_12 - INFO -   Trying prefix of length 38 (20% of seed)
+2025-11-06 15:54:06 - crack_dim_12 - INFO - Found snake length 43 (record: 1439, method: seed_9_prefix_38)
+2025-11-06 15:54:06 - crack_dim_12 - INFO -     ✓ Extended from prefix 38: 38 → 43 (+5)
+    Time: 0.01s
+2025-11-06 15:54:06 - crack_dim_12 - INFO -   Trying prefix of length 19 (10% of seed)
+2025-11-06 15:54:06 - crack_dim_12 - INFO - Found snake length 25 (record: 1439, method: seed_9_prefix_19)
+2025-11-06 15:54:06 - crack_dim_12 - INFO -     ✓ Extended from prefix 19: 19 → 25 (+6)
+    Time: 0.01s
+2025-11-06 15:54:06 - crack_dim_12 - INFO -   Trying fixed prefix of length 100
+2025-11-06 15:54:06 - crack_dim_12 - INFO - Found snake length 103 (record: 1439, method: seed_9_fixed_100)
+2025-11-06 15:54:06 - crack_dim_12 - INFO -     ✓ Extended from fixed prefix 100: 100 → 103 (+3)
+    Time: 0.01s
+2025-11-06 15:54:06 - crack_dim_12 - INFO -   Trying fixed prefix of length 50
+2025-11-06 15:54:06 - crack_dim_12 - INFO - Found snake length 54 (record: 1439, method: seed_9_fixed_50)
+2025-11-06 15:54:06 - crack_dim_12 - INFO -     ✓ Extended from fixed prefix 50: 50 → 54 (+4)
+    Time: 0.01s
+2025-11-06 15:54:06 - crack_dim_12 - INFO -   Trying fixed prefix of length 20
+2025-11-06 15:54:06 - crack_dim_12 - INFO - Found snake length 26 (record: 1439, method: seed_9_fixed_20)
+2025-11-06 15:54:06 - crack_dim_12 - INFO -     ✓ Extended from fixed prefix 20: 20 → 26 (+6)
+    Time: 0.01s
+2025-11-06 15:54:06 - crack_dim_12 - INFO -   Trying fixed prefix of length 10
+2025-11-06 15:54:06 - crack_dim_12 - INFO - Found snake length 17 (record: 1439, method: seed_9_fixed_10)
+2025-11-06 15:54:06 - crack_dim_12 - INFO -     ✓ Extended from fixed prefix 10: 10 → 17 (+7)
+    Time: 0.01s
+2025-11-06 15:54:06 - crack_dim_12 - INFO - 
+Strategy 3 best result: length 725 (from dimension 11, prefix length 724)
+2025-11-06 15:54:06 - crack_dim_12 - INFO - 
+======================================================================
+2025-11-06 15:54:06 - crack_dim_12 - INFO - SEARCH COMPLETE
+2025-11-06 15:54:06 - crack_dim_12 - INFO - ======================================================================
+2025-11-06 15:54:06 - crack_dim_12 - INFO - Best snake found: length 733
+2025-11-06 15:54:06 - crack_dim_12 - INFO - Known record: 1439
+2025-11-06 15:54:06 - crack_dim_12 - INFO - Strategy: priming_from_lower_dimensions
+2025-11-06 15:54:06 - crack_dim_12 - INFO - Below known record (difference: 706)
