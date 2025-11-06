@@ -1,0 +1,71 @@
+2025-11-06 15:19:46 - crack_dim_14 - INFO - ======================================================================
+2025-11-06 15:19:46 - crack_dim_14 - INFO - COMPREHENSIVE SEARCH FOR DIMENSION 14
+2025-11-06 15:19:46 - crack_dim_14 - INFO - ======================================================================
+2025-11-06 15:19:46 - crack_dim_14 - INFO - Memory limit: 50.0 GB
+2025-11-06 15:19:46 - crack_dim_14 - INFO - Max levels: 200000
+2025-11-06 15:19:46 - crack_dim_14 - INFO - Known record: None
+2025-11-06 15:19:46 - crack_dim_14 - INFO - 
+2025-11-06 15:19:46 - crack_dim_14 - INFO - 
+======================================================================
+2025-11-06 15:19:46 - crack_dim_14 - INFO - STARTING STRATEGY 1
+2025-11-06 15:19:46 - crack_dim_14 - INFO - ======================================================================
+2025-11-06 15:19:46 - crack_dim_14 - INFO - ======================================================================
+2025-11-06 15:19:46 - crack_dim_14 - INFO - STRATEGY 1: Priming from lower dimensions (target: 14)
+2025-11-06 15:19:46 - crack_dim_14 - INFO - ======================================================================
+2025-11-06 15:19:46 - crack_dim_14 - INFO - 
+Attempting to extend from dimension 13 to 14
+2025-11-06 15:19:46 - crack_dim_14 - INFO -   Seed snake length: 2854
+  Known record for 13: 2854
+2025-11-06 15:22:04 - crack_dim_14 - INFO - Found snake length 2855 (no known record, method: priming_from_13)
+2025-11-06 15:22:04 - crack_dim_14 - INFO -   ✓ Extended from 13D: 2854 → 2855 (+1)
+  Time: 137.08s
+2025-11-06 15:22:04 - crack_dim_14 - INFO - 
+Attempting to extend from dimension 12 to 14
+2025-11-06 15:22:04 - crack_dim_14 - INFO -   Seed snake length: 1439
+  Known record for 12: 1439
+2025-11-06 15:22:57 - crack_dim_14 - INFO - Found snake length 1441 (no known record, method: priming_from_12)
+2025-11-06 15:22:57 - crack_dim_14 - INFO -   ✓ Extended from 12D: 1439 → 1441 (+2)
+  Time: 53.34s
+2025-11-06 15:22:57 - crack_dim_14 - INFO - 
+Attempting to extend from dimension 11 to 14
+2025-11-06 15:22:57 - crack_dim_14 - INFO -   Seed snake length: 732
+  Known record for 11: 732
+2025-11-06 15:23:30 - crack_dim_14 - INFO - Found snake length 735 (no known record, method: priming_from_11)
+2025-11-06 15:23:30 - crack_dim_14 - INFO -   ✓ Extended from 11D: 732 → 735 (+3)
+  Time: 32.40s
+2025-11-06 15:23:30 - crack_dim_14 - INFO - 
+Strategy 1 best result: length 2855 (from dimension 13)
+2025-11-06 15:23:30 - crack_dim_14 - INFO - New best: 2855 (Strategy 1)
+2025-11-06 15:23:30 - crack_dim_14 - INFO - 
+======================================================================
+2025-11-06 15:23:30 - crack_dim_14 - INFO - STARTING STRATEGY 2
+2025-11-06 15:23:30 - crack_dim_14 - INFO - ======================================================================
+2025-11-06 15:23:30 - crack_dim_14 - INFO - ======================================================================
+2025-11-06 15:23:30 - crack_dim_14 - INFO - STRATEGY 2: Direct pruned BFS search (dimension 14)
+2025-11-06 15:23:30 - crack_dim_14 - INFO - ======================================================================
+2025-11-06 15:23:30 - crack_dim_14 - INFO - Starting search from empty snake...
+2025-11-06 15:23:30 - crack_dim_14 - INFO -   ✓ Direct search found snake of length 14
+  Time: 0.04s
+2025-11-06 15:23:30 - crack_dim_14 - INFO - 
+======================================================================
+2025-11-06 15:23:30 - crack_dim_14 - INFO - STARTING STRATEGY 3
+2025-11-06 15:23:30 - crack_dim_14 - INFO - ======================================================================
+2025-11-06 15:23:30 - crack_dim_14 - INFO - ======================================================================
+2025-11-06 15:23:30 - crack_dim_14 - INFO - STRATEGY 3: Multiple seed starting points (dimension 14)
+2025-11-06 15:23:30 - crack_dim_14 - INFO - ======================================================================
+2025-11-06 15:23:30 - crack_dim_14 - INFO - 
+Trying seeds from dimension 13
+2025-11-06 15:23:30 - crack_dim_14 - INFO -   Full seed length: 2854
+2025-11-06 15:23:30 - crack_dim_14 - INFO -   Trying prefix of length 2825 (99% of seed)
+2025-11-06 15:25:43 - crack_dim_14 - INFO - Found snake length 2826 (no known record, method: seed_13_prefix_2825)
+2025-11-06 15:25:43 - crack_dim_14 - INFO -     ✓ Extended from prefix 2825: 2825 → 2826 (+1)
+    Time: 132.95s
+2025-11-06 15:25:43 - crack_dim_14 - INFO -   Trying prefix of length 2711 (95% of seed)
+2025-11-06 15:27:55 - crack_dim_14 - INFO - Found snake length 2712 (no known record, method: seed_13_prefix_2711)
+2025-11-06 15:27:55 - crack_dim_14 - INFO -     ✓ Extended from prefix 2711: 2711 → 2712 (+1)
+    Time: 130.41s
+2025-11-06 15:27:55 - crack_dim_14 - INFO -   Trying prefix of length 2568 (90% of seed)
+2025-11-06 15:29:56 - crack_dim_14 - INFO - Found snake length 2569 (no known record, method: seed_13_prefix_2568)
+2025-11-06 15:29:56 - crack_dim_14 - INFO -     ✓ Extended from prefix 2568: 2568 → 2569 (+1)
+    Time: 120.57s
+2025-11-06 15:29:56 - crack_dim_14 - INFO -   Trying prefix of length 2425 (85% of seed)
