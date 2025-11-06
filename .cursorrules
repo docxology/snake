@@ -1,0 +1,63 @@
+# Snake-in-the-Box Project Rules
+
+## Code Quality Standards
+
+- Professional, effective, real methods, documented and tested with informative logging
+- Always use test-driven development (TDD) with a unified modular approach to all modules and tests
+- Documentation and descriptions should be understated and "show not tell"
+- Use python3 to run python scripts
+- Modular, well-documented, clearly reasoned code
+- Scan the repo entirely before acting, so you know that you are acting intelligently
+- Avoid redundant code sections and scripts
+- No mock methods, always do real data analysis
+- Follow professional, functional, intelligent, wise, modular, concise, elegant, thoughtful, clearly-commented, interpretable code
+- Assess where and how you are in what kind of file and total context
+- Use all programming best practices thoughtfully
+
+## Project Structure
+
+- Core module: Data structures (HypercubeBitmap, SnakeNode), conversions, validation
+- Search module: Pruned BFS algorithm, fitness evaluators, priming strategies, parallel processing
+- Utils module: Canonical form, export functions, visualization tools
+- Benchmarks module: Known snake records, performance profiling
+- Analysis module: Dimension analysis (N=1-16), report generation, validation reports
+
+## Testing Requirements
+
+- Comprehensive test coverage for all components
+- Unit tests for each module
+- Integration tests for workflows
+- Performance benchmarks
+- Validation against known records
+- All tests must pass before committing
+
+## Documentation Standards
+
+- AGENTS.md files at every module level for clarity
+- README.md with comprehensive API reference
+- Code comments that explain "why" not just "what"
+- Docstrings for all public functions and classes
+- Examples in documentation must match actual API exports
+
+## Dependencies
+
+- Core: numpy (bitmap operations)
+- Visualization: matplotlib (optional)
+- Profiling: memory-profiler (optional)
+- Testing: pytest
+
+## Performance Considerations
+
+- Memory: O(2^n) for n-dimensional hypercube
+- Use bitmap-based vertex tracking for efficiency
+- Prune nodes by fitness when memory limits exceeded
+- Support parallel processing for speedup
+
+## Code Style
+
+- Follow PEP 8 style guidelines
+- Use type hints where appropriate
+- Clear, descriptive variable and function names
+- Modular design with clear interfaces
+- Avoid premature optimization, but be mindful of performance
+

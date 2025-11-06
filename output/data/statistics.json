@@ -1,0 +1,12 @@
+{
+  "total_dimensions": 13,
+  "valid_snakes": 13,
+  "invalid_snakes": 0,
+  "from_known": 0,
+  "from_search": 0,
+  "from_priming": 0,
+  "total_length": 5700,
+  "average_length": 438.46153846153845,
+  "total_time_seconds": 0.20282626152038574,
+  "total_time_hours": 5.6340628200107153e-05
+}

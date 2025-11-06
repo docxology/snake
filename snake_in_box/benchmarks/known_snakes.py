@@ -1,0 +1,164 @@
+"""Database of known snake-in-the-box records."""
+
+from typing import Dict, List, Optional
+from ..core.transitions import parse_hex_transition_string, transition_to_vertex
+
+# Known record lengths from Ace (2025) and literature
+KNOWN_RECORDS: Dict[int, int] = {
+    3: 4,    # Optimal (exhaustive search)
+    4: 7,    # Optimal
+    5: 13,   # Optimal
+    6: 26,   # Optimal
+    7: 50,   # From Ace (2025) Table 1
+    8: 97,   # From Ace (2025) Table 1
+    9: 188,  # From Ace (2025) Table 1 (Wynn's snake)
+    10: 373, # From Ace (2025) Table 1
+    11: 732, # From Ace (2025) - new lower bound
+    12: 1439, # From Ace (2025) - new lower bound
+    13: 2854, # From Ace (2025) - new lower bound
+}
+
+# The 13-dimensional snake transition sequence from Ace (2025) appendix
+# This is the hex string representation from the paper
+SNAKE_13D_HEX_STRING = (
+    "01203140210541021432102643145041342104314501432731201430126321430"
+    "53102305314503604314021431046806104314501431063021432035043203145"
+    "365403140543753140214310451341021431650453145041204501430540,9804"
+    "50341054021405413540561341201431540134120413573450413045635413023"
+    "41361043145014310631430234138054065134120143154012031457021342105"
+    "4103412041654102143073504120135034137054021031402,a42140541354056"
+    "13412014315401205734504130456354130234053023412036013410541340160"
+    "86401341204134063054135032013503412362103410213723410541340124314"
+    "05413463541302340530234132910540230541350320450236134120143154013"
+    "41204135734504130456354130234054136013410541340165123413853204501"
+    "43054023053654314035205401340541021372341054134016045302143203504"
+    "3203145365403140541,ba145041204502a132015401205734504130456354130"
+    "23405302341203601341054134016086401341204134063054135032013503412"
+    "36210341021372341054134012431405314263021432035043203143a45314504"
+    "12045023613412014315401341204135734504130456354130234136104314501"
+    "43106314302341380540630413456350412013503413605401340541021371201"
+    "54016052354130234054102143293105402140541354056134120143154013412"
+    "04135734504130456354130453412036013410541340160864013412041346534"
+    "13503201350341236210341021372341054134012431405413463502143105302"
+    "1435a305413503201350341236134120143154013412041357345041304563541"
+    "30234053023412036013410541340162804531450412013503413605401203140"
+    "21054102143073504120450143054012045063201450431045235413493041345"
+    "241053140610,cb54102143210540120573450413045635413023405302341203"
+    "60134105413401608640134120413406305413503201350341236210341021372"
+    "341054134012431405314263021432035043203143a4531450412045023613412"
+    "01431540134120413573450413045635413023413610431450143106314302341"
+    "38054063041345635041201350341360540134054102137210231450412013401"
+    "60523541302340541021432931054021405413540561341201431540134120413"
+    "57345041304563541304534120360134105413401608640134120413465341350"
+    "32013503412362103410213723410541340124314054134635021431053021435"
+    "a3054135032013503412361341201431540134120413573450413045635413023"
+    "40530234120360134105413401628045314504120135034136054012031402105"
+    "41021430735041204501430540120450632014504310452354134935413503201"
+    "3503410ba54021405413540561341201431540134120413573450413045635413"
+    "02340530234120360134105413401608640134120413465341350320135034123"
+    "62103410213723410541340124314054134635021431053021435a30541350320"
+    "13503413261341201431540134120413573450413045635413023405302341203"
+    "60134105413401628045314504120135631021430543140214310450632750413"
+    "05621065046123413045612594310214054135405613412014315401341204135"
+    "73450413045635413023405302341203601341054134016086401341204134063"
+    "05413503201350341236210341021372341054134012431405413463502143105"
+    "3143023413a461341201431540134120413573450413045635413023405302341"
+    "20360134105413401671045034105402140538034120145012041302104507605"
+    "401340541024054134504620531021405413540672104503410540214054135"
+)
+
+# Truncation points for lower dimensions (from paper)
+# Truncating the 13D snake at these positions gives snakes in lower dimensions
+TRUNCATION_POINTS: Dict[int, int] = {
+    9: 190,   # Length-190 snake from Wynn
+    10: 373,  # Length-373 snake
+    11: 732,  # Length-732 snake
+    12: 1439, # Length-1439 snake
+    13: 2854, # Full length-2854 snake
+}
+
+
+def get_known_record(dimension: int) -> Optional[int]:
+    """Get known record length for a dimension.
+    
+    Parameters
+    ----------
+    dimension : int
+        Dimension of hypercube
+    
+    Returns
+    -------
+    Optional[int]
+        Known record length, or None if not available
+    """
+    return KNOWN_RECORDS.get(dimension)
+
+
+def get_known_snake(dimension: int) -> Optional[List[int]]:
+    """Get known snake transition sequence for a dimension.
+    
+    Extracts the snake from the 13D sequence by truncating at the
+    appropriate position, or returns None if not available.
+    
+    Parameters
+    ----------
+    dimension : int
+        Dimension of hypercube (9-13 supported)
+    
+    Returns
+    -------
+    Optional[List[int]]
+        Transition sequence, or None if dimension not supported
+    """
+    if dimension not in TRUNCATION_POINTS:
+        return None
+    
+    # Parse the full 13D sequence
+    full_sequence = parse_hex_transition_string(SNAKE_13D_HEX_STRING)
+    
+    # Truncate to appropriate length
+    truncate_at = TRUNCATION_POINTS[dimension]
+    return full_sequence[:truncate_at]
+
+
+def get_known_snake_vertices(dimension: int) -> Optional[List[int]]:
+    """Get known snake as vertex sequence.
+    
+    Parameters
+    ----------
+    dimension : int
+        Dimension of hypercube (9-13 supported)
+    
+    Returns
+    -------
+    Optional[List[int]]
+        Vertex sequence, or None if dimension not supported
+    """
+    transitions = get_known_snake(dimension)
+    if transitions is None:
+        return None
+    
+    return transition_to_vertex(transitions, dimension)
+
+
+def validate_known_snake(dimension: int) -> tuple[bool, str]:
+    """Validate a known snake from the database.
+    
+    Parameters
+    ----------
+    dimension : int
+        Dimension to validate (9-13)
+    
+    Returns
+    -------
+    tuple[bool, str]
+        (is_valid, message)
+    """
+    from ..core.validation import validate_transition_sequence
+    
+    transitions = get_known_snake(dimension)
+    if transitions is None:
+        return False, f"No known snake for dimension {dimension}"
+    
+    return validate_transition_sequence(transitions, dimension)
+
