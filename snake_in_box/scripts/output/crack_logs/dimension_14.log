@@ -204,3 +204,50 @@ Trying seeds from dimension 12
 2025-11-06 15:54:15 - crack_dim_14 - INFO -     ✓ Extended from fixed prefix 200: 200 → 204 (+4)
     Time: 20.55s
 2025-11-06 15:54:15 - crack_dim_14 - INFO -   Trying fixed prefix of length 100
+2025-11-06 15:54:32 - crack_dim_14 - INFO - Found snake length 105 (no known record, method: seed_12_fixed_100)
+2025-11-06 15:54:32 - crack_dim_14 - INFO -     ✓ Extended from fixed prefix 100: 100 → 105 (+5)
+    Time: 17.55s
+2025-11-06 15:54:32 - crack_dim_14 - INFO -   Trying fixed prefix of length 50
+2025-11-06 15:54:49 - crack_dim_14 - INFO - Found snake length 56 (no known record, method: seed_12_fixed_50)
+2025-11-06 15:54:49 - crack_dim_14 - INFO -     ✓ Extended from fixed prefix 50: 50 → 56 (+6)
+    Time: 17.04s
+2025-11-06 15:54:49 - crack_dim_14 - INFO -   Trying fixed prefix of length 20
+2025-11-06 15:55:07 - crack_dim_14 - INFO - Found snake length 28 (no known record, method: seed_12_fixed_20)
+2025-11-06 15:55:07 - crack_dim_14 - INFO -     ✓ Extended from fixed prefix 20: 20 → 28 (+8)
+    Time: 17.96s
+2025-11-06 15:55:07 - crack_dim_14 - INFO -   Trying fixed prefix of length 10
+2025-11-06 15:55:27 - crack_dim_14 - INFO - Found snake length 19 (no known record, method: seed_12_fixed_10)
+2025-11-06 15:55:27 - crack_dim_14 - INFO -     ✓ Extended from fixed prefix 10: 10 → 19 (+9)
+    Time: 19.99s
+2025-11-06 15:55:27 - crack_dim_14 - INFO - 
+Trying seeds from dimension 11
+2025-11-06 15:55:27 - crack_dim_14 - INFO -   Full seed length: 732
+2025-11-06 15:55:27 - crack_dim_14 - INFO -   Trying prefix of length 724 (99% of seed)
+2025-11-06 15:56:01 - crack_dim_14 - INFO - Found snake length 727 (no known record, method: seed_11_prefix_724)
+2025-11-06 15:56:01 - crack_dim_14 - INFO -     ✓ Extended from prefix 724: 724 → 727 (+3)
+    Time: 33.84s
+2025-11-06 15:56:01 - crack_dim_14 - INFO -   Trying prefix of length 695 (95% of seed)
+2025-11-06 15:56:34 - crack_dim_14 - INFO - Found snake length 698 (no known record, method: seed_11_prefix_695)
+2025-11-06 15:56:34 - crack_dim_14 - INFO -     ✓ Extended from prefix 695: 695 → 698 (+3)
+    Time: 32.87s
+2025-11-06 15:56:34 - crack_dim_14 - INFO -   Trying prefix of length 658 (90% of seed)
+2025-11-06 15:57:06 - crack_dim_14 - INFO - Found snake length 661 (no known record, method: seed_11_prefix_658)
+2025-11-06 15:57:06 - crack_dim_14 - INFO -     ✓ Extended from prefix 658: 658 → 661 (+3)
+    Time: 31.90s
+2025-11-06 15:57:06 - crack_dim_14 - INFO -   Trying prefix of length 622 (85% of seed)
+2025-11-06 15:57:38 - crack_dim_14 - INFO - Found snake length 625 (no known record, method: seed_11_prefix_622)
+2025-11-06 15:57:38 - crack_dim_14 - INFO -     ✓ Extended from prefix 622: 622 → 625 (+3)
+    Time: 31.47s
+2025-11-06 15:57:38 - crack_dim_14 - INFO -   Trying prefix of length 585 (80% of seed)
+2025-11-06 15:58:08 - crack_dim_14 - INFO - Found snake length 588 (no known record, method: seed_11_prefix_585)
+2025-11-06 15:58:08 - crack_dim_14 - INFO -     ✓ Extended from prefix 585: 585 → 588 (+3)
+    Time: 30.30s
+2025-11-06 15:58:08 - crack_dim_14 - INFO -   Trying prefix of length 549 (75% of seed)
+2025-11-06 15:58:36 - crack_dim_14 - INFO - Found snake length 552 (no known record, method: seed_11_prefix_549)
+2025-11-06 15:58:36 - crack_dim_14 - INFO -     ✓ Extended from prefix 549: 549 → 552 (+3)
+    Time: 28.14s
+2025-11-06 15:58:36 - crack_dim_14 - INFO -   Trying prefix of length 512 (70% of seed)
+2025-11-06 15:59:05 - crack_dim_14 - INFO - Found snake length 515 (no known record, method: seed_11_prefix_512)
+2025-11-06 15:59:05 - crack_dim_14 - INFO -     ✓ Extended from prefix 512: 512 → 515 (+3)
+    Time: 28.54s
+2025-11-06 15:59:05 - crack_dim_14 - INFO -   Trying prefix of length 439 (60% of seed)
