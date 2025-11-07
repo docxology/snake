@@ -57,3 +57,19 @@ Strategy 1 best result: length 2855 (from dimension 13)
 Trying seeds from dimension 13
 2025-11-06 15:57:59 - crack_dim_14 - INFO -   Full seed length: 2854
 2025-11-06 15:57:59 - crack_dim_14 - INFO -   Trying prefix of length 2825 (99% of seed)
+2025-11-06 16:00:18 - crack_dim_14 - INFO - Found snake length 2826 (no known record, method: seed_13_prefix_2825)
+2025-11-06 16:00:18 - crack_dim_14 - INFO -     ✓ Extended from prefix 2825: 2825 → 2826 (+1)
+    Time: 138.63s
+2025-11-06 16:00:18 - crack_dim_14 - INFO -   Trying prefix of length 2711 (95% of seed)
+2025-11-06 16:02:36 - crack_dim_14 - INFO - Found snake length 2712 (no known record, method: seed_13_prefix_2711)
+2025-11-06 16:02:36 - crack_dim_14 - INFO -     ✓ Extended from prefix 2711: 2711 → 2712 (+1)
+    Time: 137.09s
+2025-11-06 16:02:36 - crack_dim_14 - INFO -   Trying prefix of length 2568 (90% of seed)
+2025-11-06 16:04:42 - crack_dim_14 - INFO - Found snake length 2569 (no known record, method: seed_13_prefix_2568)
+2025-11-06 16:04:42 - crack_dim_14 - INFO -     ✓ Extended from prefix 2568: 2568 → 2569 (+1)
+    Time: 124.64s
+2025-11-06 16:04:42 - crack_dim_14 - INFO -   Trying prefix of length 2425 (85% of seed)
+2025-11-06 16:06:40 - crack_dim_14 - INFO - Found snake length 2426 (no known record, method: seed_13_prefix_2425)
+2025-11-06 16:06:40 - crack_dim_14 - INFO -     ✓ Extended from prefix 2425: 2425 → 2426 (+1)
+    Time: 118.24s
+2025-11-06 16:06:40 - crack_dim_14 - INFO -   Trying prefix of length 2283 (80% of seed)

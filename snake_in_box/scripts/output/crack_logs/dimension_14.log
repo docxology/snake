@@ -251,3 +251,60 @@ Trying seeds from dimension 11
 2025-11-06 15:59:05 - crack_dim_14 - INFO -     ✓ Extended from prefix 512: 512 → 515 (+3)
     Time: 28.54s
 2025-11-06 15:59:05 - crack_dim_14 - INFO -   Trying prefix of length 439 (60% of seed)
+2025-11-06 15:59:33 - crack_dim_14 - INFO - Found snake length 442 (no known record, method: seed_11_prefix_439)
+2025-11-06 15:59:33 - crack_dim_14 - INFO -     ✓ Extended from prefix 439: 439 → 442 (+3)
+    Time: 27.65s
+2025-11-06 15:59:33 - crack_dim_14 - INFO -   Trying prefix of length 366 (50% of seed)
+2025-11-06 15:59:58 - crack_dim_14 - INFO - Found snake length 370 (no known record, method: seed_11_prefix_366)
+2025-11-06 15:59:58 - crack_dim_14 - INFO -     ✓ Extended from prefix 366: 366 → 370 (+4)
+    Time: 25.05s
+2025-11-06 15:59:58 - crack_dim_14 - INFO -   Trying prefix of length 292 (40% of seed)
+2025-11-06 16:00:22 - crack_dim_14 - INFO - Found snake length 296 (no known record, method: seed_11_prefix_292)
+2025-11-06 16:00:22 - crack_dim_14 - INFO -     ✓ Extended from prefix 292: 292 → 296 (+4)
+    Time: 24.15s
+2025-11-06 16:00:22 - crack_dim_14 - INFO -   Trying prefix of length 219 (30% of seed)
+2025-11-06 16:00:44 - crack_dim_14 - INFO - Found snake length 223 (no known record, method: seed_11_prefix_219)
+2025-11-06 16:00:44 - crack_dim_14 - INFO -     ✓ Extended from prefix 219: 219 → 223 (+4)
+    Time: 22.71s
+2025-11-06 16:00:44 - crack_dim_14 - INFO -   Trying prefix of length 146 (20% of seed)
+2025-11-06 16:01:05 - crack_dim_14 - INFO - Found snake length 151 (no known record, method: seed_11_prefix_146)
+2025-11-06 16:01:05 - crack_dim_14 - INFO -     ✓ Extended from prefix 146: 146 → 151 (+5)
+    Time: 20.18s
+2025-11-06 16:01:05 - crack_dim_14 - INFO -   Trying prefix of length 73 (10% of seed)
+2025-11-06 16:01:23 - crack_dim_14 - INFO - Found snake length 79 (no known record, method: seed_11_prefix_73)
+2025-11-06 16:01:23 - crack_dim_14 - INFO -     ✓ Extended from prefix 73: 73 → 79 (+6)
+    Time: 18.06s
+2025-11-06 16:01:23 - crack_dim_14 - INFO -   Trying fixed prefix of length 500
+2025-11-06 16:01:52 - crack_dim_14 - INFO - Found snake length 503 (no known record, method: seed_11_fixed_500)
+2025-11-06 16:01:52 - crack_dim_14 - INFO -     ✓ Extended from fixed prefix 500: 500 → 503 (+3)
+    Time: 28.83s
+2025-11-06 16:01:52 - crack_dim_14 - INFO -   Trying fixed prefix of length 200
+2025-11-06 16:02:12 - crack_dim_14 - INFO - Found snake length 204 (no known record, method: seed_11_fixed_200)
+2025-11-06 16:02:12 - crack_dim_14 - INFO -     ✓ Extended from fixed prefix 200: 200 → 204 (+4)
+    Time: 20.38s
+2025-11-06 16:02:12 - crack_dim_14 - INFO -   Trying fixed prefix of length 100
+2025-11-06 16:02:29 - crack_dim_14 - INFO - Found snake length 105 (no known record, method: seed_11_fixed_100)
+2025-11-06 16:02:29 - crack_dim_14 - INFO -     ✓ Extended from fixed prefix 100: 100 → 105 (+5)
+    Time: 17.25s
+2025-11-06 16:02:29 - crack_dim_14 - INFO -   Trying fixed prefix of length 50
+2025-11-06 16:02:46 - crack_dim_14 - INFO - Found snake length 56 (no known record, method: seed_11_fixed_50)
+2025-11-06 16:02:46 - crack_dim_14 - INFO -     ✓ Extended from fixed prefix 50: 50 → 56 (+6)
+    Time: 16.29s
+2025-11-06 16:02:46 - crack_dim_14 - INFO -   Trying fixed prefix of length 20
+2025-11-06 16:03:03 - crack_dim_14 - INFO - Found snake length 28 (no known record, method: seed_11_fixed_20)
+2025-11-06 16:03:03 - crack_dim_14 - INFO -     ✓ Extended from fixed prefix 20: 20 → 28 (+8)
+    Time: 17.08s
+2025-11-06 16:03:03 - crack_dim_14 - INFO -   Trying fixed prefix of length 10
+2025-11-06 16:03:22 - crack_dim_14 - INFO - Found snake length 19 (no known record, method: seed_11_fixed_10)
+2025-11-06 16:03:22 - crack_dim_14 - INFO -     ✓ Extended from fixed prefix 10: 10 → 19 (+9)
+    Time: 19.73s
+2025-11-06 16:03:22 - crack_dim_14 - INFO - 
+Strategy 3 best result: length 2826 (from dimension 13, prefix length 2825)
+2025-11-06 16:03:22 - crack_dim_14 - INFO - 
+======================================================================
+2025-11-06 16:03:22 - crack_dim_14 - INFO - SEARCH COMPLETE
+2025-11-06 16:03:22 - crack_dim_14 - INFO - ======================================================================
+2025-11-06 16:03:22 - crack_dim_14 - INFO - Best snake found: length 2855
+2025-11-06 16:03:22 - crack_dim_14 - INFO - Known record: None
+2025-11-06 16:03:22 - crack_dim_14 - INFO - Strategy: priming_from_lower_dimensions
+2025-11-06 16:03:22 - crack_dim_14 - INFO - No known record for comparison
