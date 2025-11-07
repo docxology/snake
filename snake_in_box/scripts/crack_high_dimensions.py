@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""Comprehensive exhaustive search for dimensions 11-14.
+"""Comprehensive exhaustive search for dimensions 11-16.
 
-This script performs exhaustive, validated searches for dimensions 11-14 using
+This script performs exhaustive, validated searches for dimensions 11-16 using
 multiple aggressive search strategies with comprehensive logging and progress saving.
 
 Strategies:
@@ -36,7 +36,7 @@ from snake_in_box.benchmarks.known_snakes import (
 
 
 # Configuration
-TARGET_DIMENSIONS = [11, 12, 13, 14]
+TARGET_DIMENSIONS = [11, 12, 13, 14, 15, 16]
 MEMORY_LIMIT_GB = 50.0
 MAX_LEVELS = 200000
 OUTPUT_BASE = "output"

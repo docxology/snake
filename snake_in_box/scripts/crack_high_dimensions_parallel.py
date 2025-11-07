@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""Parallel comprehensive exhaustive search for dimensions 11-14.
+"""Parallel comprehensive exhaustive search for dimensions 11-16.
 
-This script performs exhaustive, validated searches for dimensions 11-14 using
+This script performs exhaustive, validated searches for dimensions 11-16 using
 multiple aggressive search strategies with comprehensive logging and progress saving.
 Runs one independent process per dimension for parallel execution.
 
@@ -366,7 +366,7 @@ def generate_summary_report(results: Dict[int, Dict]) -> None:
     os.makedirs(CRACK_RESULTS_DIR, exist_ok=True)
     
     report_lines = [
-        "# Parallel Comprehensive Search Results for Dimensions 11-14",
+        "# Parallel Comprehensive Search Results for Dimensions 11-16",
         "",
         f"Generated: {time.strftime('%Y-%m-%d %H:%M:%S')}",
         f"Execution Mode: Parallel (one process per dimension)",
@@ -427,16 +427,26 @@ def generate_summary_report(results: Dict[int, Dict]) -> None:
     report_content = "\n".join(report_lines)
     
     report_file = f"{CRACK_RESULTS_DIR}/summary_report_parallel.md"
-    with open(report_file, 'w') as f:
-        f.write(report_content)
-    
-    print(f"\nSummary report saved to: {report_file}")
+    try:
+        with open(report_file, 'w') as f:
+            f.write(report_content)
+        print(f"\n✓ Summary report saved to: {report_file}")
+        
+        # Verify file was created
+        if os.path.exists(report_file):
+            file_size = os.path.getsize(report_file)
+            print(f"  Report file size: {file_size} bytes")
+        else:
+            print(f"  ⚠ WARNING: Report file was not created!")
+    except Exception as e:
+        print(f"\n✗ ERROR: Failed to save summary report: {e}")
+        traceback.print_exc()
 
 
 def main():
     """Main function to orchestrate parallel searches for all target dimensions."""
     print("=" * 70)
-    print("PARALLEL COMPREHENSIVE SEARCH FOR DIMENSIONS 11-14")
+    print("PARALLEL COMPREHENSIVE SEARCH FOR DIMENSIONS 11-16")
     print("=" * 70)
     print(f"Target dimensions: {TARGET_DIMENSIONS}")
     print(f"Number of processes: {len(TARGET_DIMENSIONS)}")
@@ -500,12 +510,18 @@ def main():
     print("=" * 70)
     
     results = {}
-    for _ in range(len(TARGET_DIMENSIONS)):
+    collected_count = 0
+    max_wait_time = 300  # 5 minutes max wait per result
+    start_collect_time = time.time()
+    
+    for i in range(len(TARGET_DIMENSIONS)):
         try:
-            item = result_queue.get(timeout=1)
+            # Wait longer for results, with timeout
+            item = result_queue.get(timeout=max_wait_time)
             dimension = item['dimension']
             result = item['result']
             results[dimension] = result
+            collected_count += 1
             
             best_length = result.get('best_length', 0)
             known_record = result.get('known_record')
@@ -522,18 +538,58 @@ def main():
                     print(f"  *** NEW RECORD FOUND ***")
                 print(f"  Strategy: {result.get('best_strategy', 'none')}")
         except Exception as e:
-            print(f"Error collecting result: {e}")
+            print(f"  ⚠ Timeout or error collecting result for dimension {TARGET_DIMENSIONS[i]}: {e}")
+            # Try to get any remaining results without timeout
+            while not result_queue.empty():
+                try:
+                    item = result_queue.get_nowait()
+                    dimension = item['dimension']
+                    result = item['result']
+                    results[dimension] = result
+                    collected_count += 1
+                    print(f"  ✓ Collected late result for dimension {dimension}")
+                except:
+                    break
     
-    # Generate summary report
-    if results:
-        print("\n" + "=" * 70)
-        print("Generating summary report...")
-        print("=" * 70)
-        generate_summary_report(results)
+    print(f"\nCollected {collected_count} out of {len(TARGET_DIMENSIONS)} results")
+    if collected_count < len(TARGET_DIMENSIONS):
+        missing = set(TARGET_DIMENSIONS) - set(results.keys())
+        print(f"  ⚠ Missing results for dimensions: {sorted(missing)}")
     
-    # Generate comprehensive visualizations
-    if results:
-        generate_comprehensive_visualizations(results)
+    # Generate summary report (always attempt, even if results is empty)
+    print("\n" + "=" * 70)
+    print("Generating summary report...")
+    print("=" * 70)
+    try:
+        if results:
+            generate_summary_report(results)
+        else:
+            print("⚠ WARNING: No results to report. Creating empty report.")
+            # Create a minimal report indicating no results
+            report_file = f"{CRACK_RESULTS_DIR}/summary_report_parallel.md"
+            with open(report_file, 'w') as f:
+                f.write(f"# Parallel Comprehensive Search Results for Dimensions 11-16\n\n")
+                f.write(f"Generated: {time.strftime('%Y-%m-%d %H:%M:%S')}\n\n")
+                f.write("## Status\n\n")
+                f.write("⚠ No results were collected from the parallel search.\n")
+                f.write("This may indicate all processes failed or results were not properly collected.\n")
+            print(f"  Created empty report at: {report_file}")
+    except Exception as e:
+        print(f"✗ ERROR: Failed to generate summary report: {e}")
+        traceback.print_exc()
+    
+    # Generate comprehensive visualizations (always attempt)
+    print("\n" + "=" * 70)
+    print("Generating comprehensive visualizations...")
+    print("=" * 70)
+    try:
+        if results:
+            generate_comprehensive_visualizations(results)
+        else:
+            print("⚠ WARNING: No results available for visualization generation.")
+    except Exception as e:
+        print(f"✗ ERROR: Failed to generate visualizations: {e}")
+        traceback.print_exc()
     
     print("\n" + "=" * 70)
     print("ALL SEARCHES COMPLETE")
