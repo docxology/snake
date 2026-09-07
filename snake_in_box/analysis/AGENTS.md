@@ -160,6 +160,21 @@ print(f"Time: {analysis['estimated_time_hours']:.2f} hours")
 
 **Returns**: `Dict` with requirements and feasibility assessment
 
+## Analysis Workflows (workflows.py)
+
+Complete pipelines for dimensions 1-16, formerly duplicated across three
+scripts; the `scripts/run_analysis.py` front door delegates here.
+
+- `run_basic_analysis(output_base="output")` — reports (analysis/validation/performance), graphical abstract, per-dimension visualizations, simple JSON dump
+- `run_full_analysis(output_base="output")` — adds exponential analysis, performance plots, computation-time tracking
+- `run_organized_analysis(output_base="output")` — organized outputs, feasibility report, comprehensive data exports (recommended)
+
+**Usage**:
+```python
+from snake_in_box.analysis.workflows import run_organized_analysis
+run_organized_analysis("output")
+```
+
 ## Dependencies
 
 - `core/`: SnakeNode, validation functions

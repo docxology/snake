@@ -97,6 +97,22 @@ visualize_snake_3d(result)
 - CSV: Tabular summary
 - Statistics: Aggregated statistics
 
+## Output Reorganization (outputs.py)
+
+### reorganize_outputs(base_dir)
+
+**Purpose**: Move stray generated files from the repository root into the
+unified `output/` layout (`reports/`, `visualizations/`,
+`graphical_abstracts/`, `test_outputs/`, `data/`). No-op when nothing to move.
+
+**Usage**:
+```python
+from snake_in_box.utils.outputs import reorganize_outputs
+reorganize_outputs(base_dir)  # repository root
+```
+
+**Note**: Front door is `scripts/reorganize_outputs.py` (thin delegator).
+
 ## Dependencies
 
 - `core/`: SnakeNode, transitions

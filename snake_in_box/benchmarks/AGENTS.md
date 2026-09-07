@@ -66,6 +66,27 @@ snake_13d = get_known_snake(13)  # Length 2854
 - 1439: Dimension 12
 - 2854: Dimension 13 (full)
 
+## Baseline Generation (generation.py)
+
+### get_snake_for_dimension(dimension)
+
+**Purpose**: Retrieve the known snake for dims 9-13 or generate a
+pattern-based baseline snake for dims 1-8; returns `None` for dims 14+.
+
+**Usage**:
+```python
+from snake_in_box.benchmarks.generation import get_snake_for_dimension
+node = get_snake_for_dimension(5)
+```
+
+### generate_all()
+
+**Purpose**: Generate/retrieve snakes for dimensions 1-16 with progress
+printing; returns `Dict[int, SnakeNode]`.
+
+**Note**: Moved from `scripts/generate_snakes_for_all_dimensions.py` (now a
+thin front door) so analysis workflows and scripts share one implementation.
+
 ## Performance Profiling
 
 ### profile_memory_usage(dimension, memory_limit_gb=1.0)

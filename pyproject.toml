@@ -27,6 +27,7 @@ classifiers = [
 
 dependencies = [
     "numpy>=1.20.0",
+    "scipy>=1.10.0",
 ]
 
 [project.optional-dependencies]
@@ -48,8 +49,8 @@ Documentation = "https://github.com/yourusername/snake#readme"
 Repository = "https://github.com/yourusername/snake"
 "Bug Tracker" = "https://github.com/yourusername/snake/issues"
 
-[tool.setuptools]
-packages = ["snake_in_box"]
+[tool.setuptools.packages.find]
+include = ["snake_in_box*"]
 
 [tool.pytest.ini_options]
 testpaths = ["snake_in_box/tests"]

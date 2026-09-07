@@ -76,6 +76,22 @@ from snake_in_box.search import parallel_search
 result = parallel_search(dimension=7, num_workers=4)
 ```
 
+### crack (module: crack.py)
+
+**Purpose**: Comprehensive record search for dimensions 11-16 with three
+strategies (priming from known lower dimensions, direct pruned BFS, multiple
+seed prefixes), snake validation, per-dimension logging, and resumable
+progress JSON under `output/crack_results/`.
+
+**Usage**:
+```python
+from snake_in_box.search.crack import search_dimension, run_all_dimensions
+result = search_dimension(11, memory_limit_gb=50.0)
+```
+
+**Note**: Front doors are `scripts/crack_high_dimensions.py` (serial) and
+`scripts/crack_high_dimensions_parallel.py` (one process per dimension).
+
 ## Fitness Evaluators
 
 ### SimpleFitnessEvaluator

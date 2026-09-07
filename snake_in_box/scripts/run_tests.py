@@ -1,11 +1,18 @@
 #!/usr/bin/env python3
-"""Run test suite."""
+"""Run the snake_in_box test suite.
 
-import sys
+Delegates to ``python3 -m pytest snake_in_box/tests/`` from the repository
+root. Prints verbose test output and exits with pytest's return code
+(0 = all tests passed, 1 = failures, 2 = interrupted, 4 = usage error).
+
+Usage (from repository root):
+    python3 snake_in_box/scripts/run_tests.py
+"""
+
 import subprocess
+import sys
 import os
 
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', '..'))
 
 def main():
     """Run all tests."""
@@ -17,4 +24,3 @@ def main():
 
 if __name__ == "__main__":
     sys.exit(main())
-

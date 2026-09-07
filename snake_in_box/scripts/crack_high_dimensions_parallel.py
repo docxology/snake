@@ -15,36 +15,23 @@ Progress is saved periodically to allow resuming.
 Comprehensive visualizations are generated after all processes complete.
 """
 
-import sys
 import os
 import json
-import logging
 import time
 import traceback
 import multiprocessing as mp
-from typing import Dict, List, Optional, Tuple
-from pathlib import Path
+from typing import Dict, List
 
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', '..'))
-
-# Import all functions from the original script
-from snake_in_box.scripts.crack_high_dimensions import (
+from snake_in_box.search.crack import (
     setup_logging,
-    validate_and_log_snake,
-    save_progress,
-    load_progress,
-    strategy_priming_from_lower_dimensions,
-    strategy_direct_bfs_search,
-    strategy_multiple_seeds,
     search_dimension,
     MEMORY_LIMIT_GB,
     MAX_LEVELS,
     OUTPUT_BASE,
     CRACK_RESULTS_DIR,
     CRACK_LOGS_DIR,
-    TARGET_DIMENSIONS
+    TARGET_DIMENSIONS,
 )
-from snake_in_box.core.snake_node import SnakeNode
 from snake_in_box.benchmarks.known_snakes import get_known_record
 from snake_in_box.utils.visualize_advanced import (
     visualize_snake_auto,
