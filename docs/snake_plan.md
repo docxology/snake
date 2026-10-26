@@ -885,10 +885,10 @@ def pruned_bfs_search(dimension, memory_limit_gb=18, fitness_function='unmarked_
 
 This comprehensive implementation guide provides all the mathematical foundations, algorithmic techniques, data structures, and software engineering practices necessary to build a robust Python package for the n-dimensional snake-in-the-box problem. The modular design allows for experimentation with different search strategies, fitness functions, and optimizations while maintaining code clarity and correctness through extensive validation and testing.
 
-[1](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/343060/455d795f-12c9-4729-bf12-e60c31c65308/snake13.pdf)
+[1](../snake13.pdf)
 [2](https://www.cs.unh.edu/~ruml/papers/snake-socs-15.pdf)
 [3](https://aaai.org/papers/flairs-2005-044/)
-[4](https://www.ai.uga.edu/sites/default/files/inline-files/drapela_thomas_e_201505_ms.pdf)
+[4](https://ai.uga.edu/sites/default/files/inline-files/theses/drapela_thomas_e_201505_ms.pdf)
 [5](https://en.wikipedia.org/wiki/Induced_subgraph)
 [6](https://en.wikipedia.org/wiki/Induced_path)
 [7](https://dl.acm.org/doi/10.1145/1143997.1144219)
@@ -943,7 +943,7 @@ This comprehensive implementation guide provides all the mathematical foundation
 [56](https://arxiv.org/html/2505.12627v1)
 [57](https://realpython.com/python-bitwise-operators/)
 [58](https://www.geeksforgeeks.org/dsa/tree-traversals-inorder-preorder-and-postorder/)
-[59](https://elearning.unipd.it/math/pluginfile.php/87933/mod_resource/content/6/m08-meta-beamer.en.pdf)
+[59](https://ctan.org/pkg/beamer)
 [60](https://stackoverflow.com/questions/2612720/how-to-do-bitwise-exclusive-or-of-two-strings-in-python)
 [61](https://news.ycombinator.com/item?id=20863431)
 [62](https://arxiv.org/html/2503.03350v1)
@@ -969,7 +969,7 @@ This comprehensive implementation guide provides all the mathematical foundation
 [82](https://cplusplus.com/forum/general/285938/)
 [83](https://20four7va.com/client-tips/chrome-extensions-for-seo/)
 [84](https://www.semanticscholar.org/paper/Nested-Rollout-Policy-Adaptation-for-Monte-Carlo-Rosin/fb363acd56c2eef709e7000b2cea574cd8047de8)
-[85](https://course.ccs.neu.edu/cs5002f18-seattle/lects/cs5002_lect11_fall18_notes.pdf)
+[85](https://web.archive.org/web/20231128095906/https://course.ccs.neu.edu/cs5002f18-seattle/lects/cs5002_lect11_fall18_notes.pdf)
 [86](http://dinalherath.com/2017/Proving-Correctness-of-Algorithms/)
 [87](https://forums.swift.org/t/bit-array-and-bit-set-api-review-the-end-of-a-gsoc-project/51396)
 [88](https://www.ijcai.org/Proceedings/81-1/Papers/062.pdf)

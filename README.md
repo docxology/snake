@@ -13,7 +13,7 @@ The Snake-in-the-Box problem is the challenge of finding the longest possible in
 ### From Source
 
 ```bash
-git clone https://github.com/yourusername/snake.git
+git clone https://github.com/docxology/snake.git
 cd snake
 pip install -e .
 ```

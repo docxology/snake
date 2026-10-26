@@ -56,10 +56,12 @@ All requirements from the comprehensive plan have been successfully implemented.
 ### Scripts
 
 ✅ **Automation Scripts:**
-- `scripts/run_full_analysis.py` - Complete analysis workflow
-- `scripts/run_complete_analysis.py` - Enhanced analysis with snake generation
-- `scripts/generate_all.py` - One-command generation
+- `scripts/run_analysis.py` - Analysis pipeline (`--mode basic|full|organized`)
+- `scripts/crack_high_dimensions.py` - Record searches for dimensions 11-16 (serial, resumable)
+- `scripts/crack_high_dimensions_parallel.py` - Same searches, one process per dimension
 - `scripts/generate_snakes_for_all_dimensions.py` - Snake generation for all dimensions
+- `scripts/reorganize_outputs.py` - Move stray artifacts into `output/` subdirectories
+- `scripts/run_tests.py` - Test-suite runner
 
 ### Generated Outputs
 
@@ -99,10 +101,12 @@ snake_in_box/
 │   ├── analyze_dimensions.py   ✅ Analysis module
 │   └── reporting.py            ✅ Report generation
 ├── scripts/
-│   ├── run_full_analysis.py    ✅ Full analysis script
-│   ├── run_complete_analysis.py ✅ Complete workflow
-│   ├── generate_all.py         ✅ One-command generation
-│   └── generate_snakes_for_all_dimensions.py ✅ Snake generator
+│   ├── run_analysis.py         ✅ Analysis pipeline
+│   ├── crack_high_dimensions.py ✅ Resumable record searches
+│   ├── crack_high_dimensions_parallel.py ✅ Parallel record searches
+│   ├── generate_snakes_for_all_dimensions.py ✅ Snake generator
+│   ├── reorganize_outputs.py   ✅ Output organizer
+│   └── run_tests.py            ✅ Test-suite runner
 └── tests/
     ├── test_analysis.py        ✅ Analysis tests
     ├── test_utils/
@@ -123,14 +127,14 @@ snake_in_box/
 
 ## Usage
 
-### Run Complete Analysis
+### Run Analysis
 ```bash
-python3 snake_in_box/scripts/run_complete_analysis.py
+uv run --extra dev python snake_in_box/scripts/run_analysis.py --mode organized
 ```
 
 ### Generate All Outputs
 ```bash
-python3 snake_in_box/scripts/generate_all.py
+uv run --extra dev python snake_in_box/scripts/run_analysis.py --mode full
 ```
 
 ### Generate Test Outputs
@@ -145,7 +149,7 @@ python3 snake_in_box/tests/generate_test_outputs.py
 - `validation_report.md` - Validation results
 - `performance_report.md` - Performance metrics
 - `graphical_abstract_16d.png` - 4x4 panel figure
-- `visualizations/dimension_*.png` - Individual visualizations
+- `output/visualizations/dimension_*.png` - Individual visualizations
 
 ## Status
 

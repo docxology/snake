@@ -1,5 +1,7 @@
 # Test Suite and Verification Report
 
+> Snapshot of the 2025-11 verification pass. Current status: run `pytest snake_in_box/tests/`; dimensions 14-16 search results live in `output/crack_results/`.
+
 ## Test Suite Results
 
 ### Overall Status

@@ -44,10 +44,10 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/yourusername/snake"
-Documentation = "https://github.com/yourusername/snake#readme"
-Repository = "https://github.com/yourusername/snake"
-"Bug Tracker" = "https://github.com/yourusername/snake/issues"
+Homepage = "https://github.com/docxology/snake"
+Documentation = "https://github.com/docxology/snake#readme"
+Repository = "https://github.com/docxology/snake"
+"Bug Tracker" = "https://github.com/docxology/snake/issues"
 
 [tool.setuptools.packages.find]
 include = ["snake_in_box*"]

@@ -86,6 +86,6 @@ Welcome to the comprehensive documentation for the Snake-in-the-Box Python packa
 ## Reference
 
 - **Paper**: Ace, Thomas E. "New Lower Bounds for Snake-in-the-Box in 11-, 12-, and 13-dimensional Hypercubes." (2025) doi:10.5281/zenodo.17538015
-- **Repository**: [GitHub](https://github.com/yourusername/snake)
+- **Repository**: [GitHub](https://github.com/docxology/snake)
 - **Package**: `snake_in_box`
 

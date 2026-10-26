@@ -7,7 +7,7 @@ This guide will help you get started with the Snake-in-the-Box package.
 ### From Source
 
 ```bash
-git clone https://github.com/yourusername/snake.git
+git clone https://github.com/docxology/snake.git
 cd snake
 pip install -e .
 ```
