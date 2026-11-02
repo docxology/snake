@@ -7,7 +7,7 @@ name = "snake-in-box"
 version = "0.1.0"
 description = "N-dimensional snake-in-the-box algorithm implementation"
 readme = "README.md"
-requires-python = ">=3.8"
+requires-python = ">=3.11"
 license = {text = "MIT"}
 authors = [
     {name = "Snake-in-the-Box Contributors"}
