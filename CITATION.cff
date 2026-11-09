@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+type: software
+title: "snake"
+authors:
+  - family-names: Friedman
+    given-names: Daniel Ari
+    orcid: "https://orcid.org/0000-0001-6232-9096"
+repository-code: "https://github.com/docxology/snake"
+abstract: "Snake-in-the-Box solver in Python: heuristically pruned breadth-first search with bit-array vertex tracking and lower-dimension priming to find long induced paths in n-dimensional hypercubes, reaching bounds of 732 (11D), 1439 (12D) and 2854 (13D), plus validation, record database and 3D visualization."
+license: MIT
