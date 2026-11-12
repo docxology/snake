@@ -1,5 +1,10 @@
 # Snake-in-the-Box
 
+<p align="center">
+  <a href="LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-blue"></a>
+  <img alt="Requires Python 3.11 or newer" src="https://img.shields.io/badge/python-3.11%2B-3776AB?logo=python&logoColor=white">
+</p>
+
 A Python implementation of the N-dimensional snake-in-the-box algorithm based on the heuristically-pruned breadth-first search method from Ace (2025).
 
 ## Overview
@@ -136,6 +141,26 @@ snake_in_box/
     ├── analyze_dimensions.py  # Dimension analysis
     ├── reporting.py   # Report generation
     └── dimension_feasibility.py  # Feasibility analysis
+```
+
+### Package map
+
+Generated on 2026-11-12 from the `import` statements under `snake_in_box/`. An arrow from A to B means code in A imports B; arrows already implied by a longer path are left out, so the picture shows layering rather than every edge.
+
+```mermaid
+flowchart TB
+    accTitle: Internal dependency map of the snake_in_box package
+    accDescr: Generated from import statements in snake_in_box. Each box is a subpackage of the package; an arrow from A to B means code in A imports B; arrows already implied by a longer path are omitted. Most-imported: core, search, benchmarks.
+    n_search["search/"]
+    n_analysis["analysis/"]
+    n_utils["utils/"]
+    n_core["core/"]
+    n_benchmarks["benchmarks/"]
+    n_search --> n_utils
+    n_benchmarks --> n_core
+    n_analysis --> n_benchmarks
+    n_utils --> n_analysis
+    n_core --> n_search
 ```
 
 ## API Reference
