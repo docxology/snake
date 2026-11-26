@@ -1,3 +1,5 @@
-# AGENTS.md — docs/manuscript/
+# Manuscript maintenance
 
-Manuscript tracking only: MANUSCRIPT_STATUS.md, README.md. No manuscript source text here; the rendered reference PDF is snake13.pdf at the repo root.
+Keep the numbered Markdown sections, bibliography, and render configuration in
+this directory. Review numeric claims against the [local evidence recipe](README.md).
+Store generated receipts and figure images in the render worktree's output directory.

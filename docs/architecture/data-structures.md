@@ -77,7 +77,7 @@ Example: Dimension 13, length 100
 
 ### Operations
 
-- `can_extend(dim)`: O(1) - Check if can extend
+- `can_extend(dim)`: O(length) - Check if can extend
 - `create_child(dim)`: O(2^n) - Create child (rebuilds bitmap)
 - `get_length()`: O(1) - Get snake length
 - `get_current_vertex()`: O(length) - Compute current vertex
@@ -105,7 +105,7 @@ After expansion, previous level is freed.
 
 1. **Initialization**: Create empty SnakeNode
 2. **Extension**: Create child nodes by extending snake
-3. **Bitmap Update**: Mark new vertex and adjacent vertices
+3. **Bitmap update** records occupied vertices and neighbors of earlier vertices in used dimensions. Free neighbors of the current endpoint can extend the path.
 4. **Fitness Calculation**: Count unmarked vertices
 5. **Pruning**: Sort by fitness, keep top nodes
 

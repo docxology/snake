@@ -885,7 +885,7 @@ def pruned_bfs_search(dimension, memory_limit_gb=18, fitness_function='unmarked_
 
 This comprehensive implementation guide provides all the mathematical foundations, algorithmic techniques, data structures, and software engineering practices necessary to build a robust Python package for the n-dimensional snake-in-the-box problem. The modular design allows for experimentation with different search strategies, fitness functions, and optimizations while maintaining code clarity and correctness through extensive validation and testing.
 
-[1](../snake13.pdf)
+[1](../reference/ace-2025.pdf)
 [2](https://www.cs.unh.edu/~ruml/papers/snake-socs-15.pdf)
 [3](https://aaai.org/papers/flairs-2005-044/)
 [4](https://ai.uga.edu/sites/default/files/inline-files/theses/drapela_thomas_e_201505_ms.pdf)
