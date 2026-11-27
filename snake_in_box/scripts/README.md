@@ -23,7 +23,7 @@ run without it.)
 | `crack_high_dimensions_parallel.py` | Same searches, one process per dimension | `snake_in_box.search.crack` | `uv run python snake_in_box/scripts/crack_high_dimensions_parallel.py` |
 | `generate_snakes_for_all_dimensions.py` | Generate/retrieve baseline snakes for dims 1-16 | `snake_in_box.benchmarks.generation` | `uv run python snake_in_box/scripts/generate_snakes_for_all_dimensions.py` |
 | `reorganize_outputs.py` | Move stray artifacts into `output/` subdirectories | `snake_in_box.utils.outputs` | `uv run python snake_in_box/scripts/reorganize_outputs.py` |
-| `run_tests.py` | Run the test suite (pytest, verbose) | `pytest snake_in_box/tests/` | `uv run python snake_in_box/scripts/run_tests.py` |
+| `run_tests.py` | Run the test suite (pytest, verbose) | `pytest snake_in_box/tests/` | `uv run --extra dev python snake_in_box/scripts/run_tests.py` |
 
 ## `run_analysis.py`
 
