@@ -15,8 +15,7 @@ def pruned_bfs_search(
 ) -> Optional[SnakeNode]:
     """Execute heuristically-pruned breadth-first search for snake-in-the-box.
     
-    This implements the algorithm from Ace (2025) that discovered record-breaking
-    snakes in dimensions 11-13. The search performs level-by-level expansion of
+    This implements the heuristic search strategy described by Ace (2025). The search performs level-by-level expansion of
     a search tree, pruning nodes when memory constraints are exceeded based on
     a fitness heuristic.
     
@@ -26,8 +25,6 @@ def pruned_bfs_search(
         Dimension of hypercube to search (n in Q_n)
     memory_limit_gb : float, optional
         Maximum memory usage in gigabytes (default: 18)
-    fitness_function : str, optional
-        Fitness measure for pruning: 'unmarked_count' (default)
     verbose : bool, optional
         Print progress information (default: True)
     
@@ -43,9 +40,9 @@ def pruned_bfs_search(
     
     Examples
     --------
-    >>> result = pruned_bfs_search(dimension=7)
-    >>> print(f"Found snake of length {result.get_length()}")
-    Found snake of length 50
+    >>> result = pruned_bfs_search(dimension=3, verbose=False)
+    >>> result.get_length()
+    4
     """
     # Initialize with empty snake at origin
     current_level: List[SnakeNode] = [SnakeNode([], dimension)]

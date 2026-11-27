@@ -9,6 +9,8 @@ from snake_in_box.search.bfs_pruned import (
     estimate_node_size,
 )
 from snake_in_box.core.snake_node import SnakeNode
+from snake_in_box.core.transitions import transition_to_vertex
+from snake_in_box.core.validation import validate_snake
 
 
 class TestBFSPruned(unittest.TestCase):
@@ -56,7 +58,8 @@ class TestBFSPruned(unittest.TestCase):
         # For dimension 3, we know optimal is 4
         result = pruned_bfs_search(dimension=3, memory_limit_gb=0.1, verbose=False)
         self.assertIsNotNone(result)
-        self.assertGreaterEqual(result.get_length(), 2)  # At least some length
+        self.assertEqual(result.get_length(), 4)
+        self.assertTrue(validate_snake(transition_to_vertex(result.transition_sequence, 3))[0])
 
 
 if __name__ == '__main__':

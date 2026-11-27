@@ -87,7 +87,7 @@ Instead of vertex sequences, we often use **transition sequences**:
 
 When building a snake, certain vertices become **prohibited**:
 - Vertices already in the snake path
-- Vertices adjacent to vertices in the snake path
+- Vertices adjacent to any earlier vertex in the path. Free neighbors of the current endpoint can extend the path.
 
 This ensures the induced path constraint is maintained.
 

@@ -45,6 +45,12 @@ Welcome to the comprehensive documentation for the Snake-in-the-Box Python packa
 - [Search Tree](diagrams/search-tree.md) - Search tree visualizations
 - [Data Flow](diagrams/data-flow.md) - Data flow diagrams
 
+## Manuscript and evidence
+
+- [Canonical methods manuscript and render recipe](manuscript/README.md)
+- [Thomas E. Ace reference publication](reference/ace-2025.pdf) and its [text transcription](reference/ace-2025-text.md)
+- [Retained search artifacts](../output/)
+
 ## Quick Links
 
 - [Installation](getting-started.md#installation)

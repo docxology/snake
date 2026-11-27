@@ -110,7 +110,7 @@ The default fitness function is simple but effective:
 fitness = count_unmarked_vertices()
 ```
 
-Despite its simplicity, this was sufficient for record-breaking results in dimensions 11-13.
+Ace (2025) used unmarked-vertex fitness in the original search. The [manuscript results](../manuscript/03_results.md) report separate fresh Python runs and checks of retained sequences.
 
 ## Algorithm Pseudocode
 

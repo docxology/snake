@@ -4,7 +4,7 @@ Fitness evaluation determines which nodes to keep when pruning the search tree. 
 
 ## Simple Fitness Evaluator
 
-The **SimpleFitnessEvaluator** uses the unmarked vertex count, which was sufficient for record-breaking results in dimensions 11-13.
+The **SimpleFitnessEvaluator** uses the unmarked vertex count. Ace (2025) used that measure in the original search.
 
 ### Implementation
 

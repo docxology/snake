@@ -42,7 +42,7 @@ dev = [
 
 [project.urls]
 Homepage = "https://github.com/docxology/snake"
-Documentation = "https://github.com/docxology/snake#readme"
+Documentation = "https://github.com/docxology/snake/blob/main/docs/index.md"
 Repository = "https://github.com/docxology/snake"
 "Bug Tracker" = "https://github.com/docxology/snake/issues"
 

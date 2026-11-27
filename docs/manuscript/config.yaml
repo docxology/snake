@@ -1,0 +1,19 @@
+paper:
+  title: "Reproducing induced paths with the Snake-in-the-Box Python package"
+  version: "0.1.0"
+authors:
+  - name: Snake-in-the-Box Contributors
+publication:
+  github_repository: docxology/snake
+  repository_url: https://github.com/docxology/snake
+manuscript_dir: docs/manuscript
+metadata:
+  license: MIT
+  language: en
+render:
+  formats:
+    pdf: true
+    html: true
+    slides: false
+    docx: false
+    epub: false

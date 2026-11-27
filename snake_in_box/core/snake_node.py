@@ -58,18 +58,12 @@ class SnakeNode:
         # Start at origin (vertex 0)
         current_vertex = 0
         self._mark_vertex(current_vertex, bitmap)
-        self._mark_adjacent(current_vertex, bitmap, used_dimensions)
-        
-        # Follow transition sequence to build snake path
+
         for transition in self.transition_sequence:
-            # Move to next vertex by flipping bit at transition position
-            current_vertex ^= (1 << transition)
-            
-            # Mark this vertex as occupied
-            self._mark_vertex(current_vertex, bitmap)
-            
-            # Mark all adjacent vertices as prohibited (only in used dimensions)
+            # Once the path leaves a vertex, any future neighbor forms a chord.
             self._mark_adjacent(current_vertex, bitmap, used_dimensions)
+            current_vertex ^= 1 << transition
+            self._mark_vertex(current_vertex, bitmap)
         
         return bitmap
     

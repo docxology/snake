@@ -8,11 +8,11 @@ The `search` module implements the heuristically-pruned breadth-first search alg
 
 Execute heuristically-pruned breadth-first search for snake-in-the-box.
 
-This implements the algorithm from Ace (2025) that discovered record-breaking snakes in dimensions 11-13.
+The search follows the frontier expansion and pruning strategy described by Ace (2025). See the [measured results](../manuscript/03_results.md).
 
 **Parameters:**
 - `dimension` (int): Dimension of hypercube to search (n in Q_n)
-- `memory_limit_gb` (float, optional): Maximum memory usage in gigabytes (default: 18.0)
+- `memory_limit_gb` (float, optional): Estimated frontier budget in gigabytes (default: 18.0)
 - `verbose` (bool, optional): Print progress information (default: True)
 
 **Returns:**
@@ -33,7 +33,7 @@ Extend a snake from dimension n to dimension n+1 or higher using priming strateg
 **Parameters:**
 - `lower_dimension_snake` (List[int]): Known good snake transition sequence in lower dimension
 - `target_dimension` (int): Target dimension to extend to
-- `memory_limit_gb` (float, optional): Maximum memory in gigabytes (default: 18.0)
+- `memory_limit_gb` (float, optional): Estimated frontier budget in gigabytes (default: 18.0)
 - `verbose` (bool, optional): Print progress (default: True)
 
 **Returns:**
@@ -53,7 +53,7 @@ Modified BFS that starts from a seed snake instead of origin.
 **Parameters:**
 - `seed_node` (SnakeNode): Seed snake node to start from
 - `dimension` (int): Target dimension
-- `memory_limit_gb` (float, optional): Maximum memory in gigabytes (default: 18.0)
+- `memory_limit_gb` (float, optional): Estimated frontier budget in gigabytes (default: 18.0)
 - `max_levels` (int, optional): Maximum levels to search (default: 10000)
 - `verbose` (bool, optional): Print progress (default: True)
 
@@ -84,7 +84,7 @@ Parallel search using multiprocessing.
 
 **Parameters:**
 - `dimension` (int): Dimension of hypercube
-- `memory_limit_gb` (float, optional): Maximum memory in gigabytes (default: 18.0)
+- `memory_limit_gb` (float, optional): Estimated frontier budget in gigabytes (default: 18.0)
 - `num_workers` (int, optional): Number of worker processes (default: 10)
 - `verbose` (bool, optional): Print progress (default: True)
 
