@@ -130,7 +130,7 @@ Python implementation will vary based on:
 
 ## Related Documentation
 
-- [Known Records](../theory/hypercube-graphs.md#known-records) - Known bounds
+- [Known Records](../theory/snake-constraints.md#maximum-length) - Known bounds
 - [Performance Tuning](../guides/performance-tuning.md) - Performance optimization
 - [Benchmarks Module AGENTS](../../snake_in_box/benchmarks/AGENTS.md) - Module documentation
 
